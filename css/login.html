@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Life-Link</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Life-Link</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donor.html">Become a Donor</a></li>
+            <li><a href="request.html">Find Organ</a></li>
+            <li><a href="hospitals.html">Hospitals</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Login Section -->
+    <section class="login-section">
+
+        <div class="login-card">
+
+            <h1>Welcome Back</h1>
+
+            <p class="login-subtitle">
+                Login to access your Life-Link dashboard.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+
+            <p id="loginMessage"></p>
+
+
+            <div class="signup-text">
+                Don't have an account?
+                <a href="#" onclick="showSignup()">Sign Up</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sign Up Popup -->
+    <div id="signupBox" class="signup-box">
+
+        <div class="signup-card">
+
+            <button class="close-btn" onclick="closeSignup()">×</button>
+
+            <h2>Create Account</h2>
+
+            <p>
+                Create a demonstration Life-Link account.
+            </p>
+
+
+            <form id="signupForm">
+
+                <label for="signupName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="signupEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="signupPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p id="signupMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <div class="demo-note">
+        <strong>⚠ Student Project:</strong>
+        Login and account creation are frontend demonstrations only.
+        No real authentication or medical database is connected.
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

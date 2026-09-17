@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Organ | Life-Link</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>♥</span> Life-Link
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donor.html">Become a Donor</a>
+            <a href="request.html" class="active">Find Organ</a>
+            <a href="hospitals.html">Hospitals</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="donor.html" class="donate-btn">Donate Now</a>
+        </div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <p>FIND SUPPORT</p>
+
+        <h1>Find an <span>Organ</span></h1>
+
+        <p class="page-intro">
+            Explore sample organ request information through this
+            simple search interface.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH AREA -->
+    <section class="request-section">
+
+        <div class="search-card">
+
+            <h2>Search Organ Requests</h2>
+
+            <p>
+                Use the filters below to explore the demonstration
+                request records.
+            </p>
+
+            <div class="search-row">
+
+                <div class="search-field">
+                    <label for="organFilter">Organ</label>
+
+                    <select id="organFilter">
+                        <option value="all">All Organs</option>
+                        <option value="Kidney">Kidney</option>
+                        <option value="Liver">Liver</option>
+                        <option value="Heart">Heart</option>
+                        <option value="Lungs">Lungs</option>
+                        <option value="Eyes">Eyes</option>
+                    </select>
+                </div>
+
+
+                <div class="search-field">
+                    <label for="cityFilter">City</label>
+
+                    <input
+                        type="text"
+                        id="cityFilter"
+                        placeholder="Search by city..."
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- REQUEST CARDS -->
+
+        <div class="request-heading">
+            <div>
+                <p>DEMONSTRATION DATA</p>
+                <h2>Organ Requests</h2>
+            </div>
+
+            <span id="resultCount">6 requests</span>
+        </div>
+
+
+        <div class="request-grid" id="requestGrid">
+
+            <!-- CARD 1 -->
+            <div class="request-card"
+                 data-organ="Kidney"
+                 data-city="Delhi">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status pending">
+                        Urgent
+                    </span>
+                </div>
+
+                <h3>Kidney</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL001
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Delhi
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            O+
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="request-card"
+                 data-organ="Liver"
+                 data-city="Chandigarh">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status">
+                        Active
+                    </span>
+                </div>
+
+                <h3>Liver</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL002
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Chandigarh
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            B+
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="request-card"
+                 data-organ="Heart"
+                 data-city="Mumbai">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status">
+                        Active
+                    </span>
+                </div>
+
+                <h3>Heart</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL003
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Mumbai
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            A+
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="request-card"
+                 data-organ="Lungs"
+                 data-city="Bengaluru">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status">
+                        Active
+                    </span>
+                </div>
+
+                <h3>Lungs</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL004
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Bengaluru
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            AB+
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="request-card"
+                 data-organ="Kidney"
+                 data-city="Pune">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status">
+                        Active
+                    </span>
+                </div>
+
+                <h3>Kidney</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL005
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Pune
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            A-
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="request-card"
+                 data-organ="Eyes"
+                 data-city="Jaipur">
+
+                <div class="request-top">
+                    <div class="organ-icon">♥</div>
+
+                    <span class="status">
+                        Active
+                    </span>
+                </div>
+
+                <h3>Eyes</h3>
+
+                <p class="patient-info">
+                    Patient Request #LL006
+                </p>
+
+                <div class="request-details">
+
+                    <div>
+                        <span>📍</span>
+                        <p>
+                            <small>Location</small>
+                            Jaipur
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>🩸</span>
+                        <p>
+                            <small>Blood Group</small>
+                            O-
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="view-btn">
+                    View Request →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div id="noResults" class="no-results">
+
+            <div>⌕</div>
+
+            <h3>No requests found</h3>
+
+            <p>
+                Try changing the organ or city filter.
+            </p>
+
+        </div>
+
+        <p class="demo-note">
+            * This page contains fictional demonstration data for
+            a student project. It is not connected to real patients,
+            donors, hospitals, or medical databases.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>♥</span> Life-Link
+        </div>
+
+        <p>
+            Connecting people. Creating hope. Saving lives.
+        </p>
+
+        <p class="copyright">
+            © 2026 Life-Link. Student Project.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

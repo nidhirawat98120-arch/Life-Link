@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Become a Donor | Life-Link</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>♥</span> Life-Link
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donor.html" class="active">Become a Donor</a>
+            <a href="request.html">Find Organ</a>
+            <a href="hospitals.html">Hospitals</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="donor.html" class="donate-btn">Donate Now</a>
+        </div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <p>MAKE A DIFFERENCE</p>
+
+        <h1>Become a <span>Donor</span></h1>
+
+        <p class="page-intro">
+            Your decision today could give someone another chance at life.
+            Register your interest in organ donation through the form below.
+        </p>
+
+    </section>
+
+
+    <!-- DONOR FORM -->
+    <section class="donor-section">
+
+        <div class="donor-info">
+
+            <div class="info-icon">♥</div>
+
+            <h2>Give the Gift of Life</h2>
+
+            <p>
+                Organ donation is a powerful way to help others.
+                By registering your interest, you can express your
+                willingness to become an organ donor.
+            </p>
+
+            <div class="info-points">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Fill in your basic information</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Select the organs you are willing to donate</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Submit your donor registration</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <h2>Donor Registration</h2>
+
+            <p class="form-subtitle">
+                Please provide the following information.
+            </p>
+
+
+            <form id="donorForm">
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <!-- AGE + BLOOD GROUP -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            placeholder="Enter age"
+                            min="18"
+                            max="100"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group</label>
+
+                        <select id="bloodGroup" name="bloodGroup" required>
+
+                            <option value="">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- CITY -->
+                <div class="form-group">
+
+                    <label for="city">City</label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="Enter your city"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ORGAN SELECTION -->
+                <div class="form-group">
+
+                    <label>Organs You Are Interested in Donating</label>
+
+                    <div class="checkbox-grid">
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Kidney">
+                            <span>Kidney</span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Liver">
+                            <span>Liver</span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Heart">
+                            <span>Heart</span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Lungs">
+                            <span>Lungs</span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Eyes">
+                            <span>Eyes</span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="organ" value="Other">
+                            <span>Other</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONSENT -->
+                <div class="consent">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="consent"
+                            required
+                        >
+
+                        <span>
+                            I understand that this is a student project
+                            demonstration and my information will not be
+                            submitted to a real hospital or medical database.
+                        </span>
+                    </label>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button type="submit" class="submit-btn">
+                    Register as a Donor →
+                </button>
+
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="successMessage" class="success-message">
+
+                    ✓ Registration submitted successfully!
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            <span>♥</span> Life-Link
+        </div>
+
+        <p>
+            Connecting people. Creating hope. Saving lives.
+        </p>
+
+        <p class="copyright">
+            © 2026 Life-Link. Student Project.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

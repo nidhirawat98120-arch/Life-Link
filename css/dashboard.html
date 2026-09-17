@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Life-Link</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Life-Link</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donor.html">Become a Donor</a></li>
+            <li><a href="request.html">Find Organ</a></li>
+            <li><a href="hospitals.html">Hospitals</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+
+        <h1>Life-Link Dashboard</h1>
+
+        <p>
+            Manage your donor information and explore your activity.
+        </p>
+
+    </section>
+
+
+    <!-- User Info -->
+    <section class="dashboard-container">
+
+        <div class="welcome-card">
+
+            <div>
+                <h2>Welcome, <span id="userName">User</span> 👋</h2>
+
+                <p id="userEmail">
+                    Your registered email will appear here.
+                </p>
+            </div>
+
+            <button onclick="logoutUser()">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <div class="dashboard-stats">
+
+            <div class="stat-card">
+                <span>🫀</span>
+                <h3>Donor Status</h3>
+                <p id="donorStatus">Not Registered</p>
+            </div>
+
+
+            <div class="stat-card">
+                <span>🔎</span>
+                <h3>Organ Requests</h3>
+                <p>6 Demo Requests</p>
+            </div>
+
+
+            <div class="stat-card">
+                <span>🏥</span>
+                <h3>Hospitals</h3>
+                <p>4 Demo Hospitals</p>
+            </div>
+
+        </div>
+
+
+        <!-- Quick Actions -->
+        <div class="dashboard-card">
+
+            <h2>Quick Actions</h2>
+
+            <div class="dashboard-actions">
+
+                <a href="donor.html">
+                    <strong>Become a Donor</strong>
+                    <span>Register your donor information</span>
+                </a>
+
+                <a href="request.html">
+                    <strong>Find Organ</strong>
+                    <span>Search available demonstration requests</span>
+                </a>
+
+                <a href="hospitals.html">
+                    <strong>View Hospitals</strong>
+                    <span>Explore hospital information</span>
+                </a>
+                <a href="my-requests.html">
+    <strong>My Requests</strong>
+    <span>Track your demonstration requests</span>
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Project Information -->
+        <div class="dashboard-card">
+
+            <h2>About Your Dashboard</h2>
+
+            <p>
+                This dashboard demonstrates how a web application can
+                display user information, activity statistics and
+                quick actions in one place.
+            </p>
+
+            <p>
+                User information is stored locally in the browser
+                using JavaScript LocalStorage for demonstration purposes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Disclaimer -->
+    <div class="demo-note">
+
+        <strong>⚠ Student Project:</strong>
+
+        This dashboard is a frontend demonstration.
+        It does not connect to real patients, donors,
+        hospitals or medical databases.
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
